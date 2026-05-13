@@ -1,3 +1,30 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs (extra safety)
+backend/logs/
+frontend/logs/
+
+# Node dependencies (VERY IMPORTANT)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Env files (secrets)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Build output (avoid uploading compiled files)
+dist/
+build/
+target/
+
+# IDE
+.vscode/
+.idea/
 # Logs
 logs
 *.log
