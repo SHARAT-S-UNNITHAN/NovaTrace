@@ -4,67 +4,57 @@ NovaTrace is a FULLY ADVANCED, production-grade SaaS web application for URL sho
 
 ## ✨ Features
 
-- **Premium UI/UX**: Futuristic dark mode, glassmorphism, and smooth Framer Motion animations.
-- **URL Shortener**: Custom aliases, password protection, expiration dates, and QR code generation.
-- **Realtime Analytics**: Live click tracking with Socket.IO, device/browser/geo stats, and interactive Recharts.
-- **Developer Platform**: API key management, request logging, and full REST API.
-- **Enterprise Ready**: Workspace support, JWT auth, rate limiting, and security headers.
+- **Premium UI/UX**: Futuristic dark mode, glassmorphism, and smooth animations.
+- **URL Shortener**: Custom aliases, QR code generation, expiration support.
+- **Realtime Analytics**: Click tracking, device/browser/geo insights.
+- **Developer API Platform**: API key generation, authentication, and usage tracking.
+- **Security**: JWT authentication, bcrypt password hashing, role-based access control.
+- **Scalable Architecture**: Designed for cloud deployment and high traffic.
 
 ## 🛠️ Tech Stack
 
 ### Frontend
 - React 18 + Vite
-- Tailwind CSS + ShadCN UI
-- Framer Motion (Animations)
-- Zustand (State Management)
-- TanStack Query (Data Fetching)
-- Recharts (Data Visualization)
+- Tailwind CSS
+- Framer Motion
+- Recharts
+- React Router
 
 ### Backend
-- Node.js + Express
-- Prisma ORM + SQLite
-- Socket.IO (Realtime)
-- JWT + Bcrypt (Security)
-- Winston (Logging)
+- Spring Boot (Java 21)
+- Spring Security + JWT
+- Hibernate + JPA
+- MySQL
+- Maven
+
+### DevOps / Cloud
+- Docker
+- AWS (EKS, RDS, S3, CloudFront)
+- CI/CD pipelines
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js 18+
-- npm or yarn
+- Java 21
+- MySQL
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/novatrace.git
-   cd novatrace
-   ```
-
-2. **Backend Setup**
-   ```bash
-   cd backend
-   npm install
-   # Configure .env file
-   npx prisma generate
-   npx prisma migrate dev --name init
-   npm start
-   ```
-
-3. **Frontend Setup**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-
-## 🐳 Docker Support
-
-Run the entire stack with a single command:
+### Backend Setup
 ```bash
-docker-compose up -d
-```
+cd backend
+./mvnw spring-boot:run
+Frontend Setup
+cd frontend
+npm install
+npm run dev
+📡 API Features
+Create short URL
+Redirect system
+Analytics tracking
+User authentication
+API key management
+📜 License
 
-## 📜 License
+MIT License
 
-MIT License. Built with ❤️ by Antigravity.
+Built with ❤️ using Spring Boot + React
